@@ -19,7 +19,6 @@
     };
 
 
-
     $.fn.andygrid = function (option) {
         return this.each(function (i, elem) {
             var elem_ = $(elem);
