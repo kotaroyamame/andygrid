@@ -43,7 +43,7 @@
             
                 
                 
-                    var setting = $.extend({},defolt, option);
+                    var setting = $.extend(defolt, option||{});
                 
                 
                 if (!setting.cssCostom) {
