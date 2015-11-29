@@ -40,11 +40,8 @@
                     "shuffle": true,
                     "cssCostom": false,
                 };
-            
-                
-                
+
                     var setting = $.extend(defolt, option||{});
-                
                 
                 if (!setting.cssCostom) {
                     csshajime();
@@ -152,9 +149,8 @@
 
                 var timer = false;
                 var widthBf_ = $(window).width();
+                
                 $(window).on("resize", function () {
-
-
 
                     if (timer !== false) {
                         clearTimeout(timer);
@@ -171,15 +167,7 @@
                             widthBf_ = $(window).width();
                             //};
                         };
-
-
-
-
-
-
                     }, 700);
-
-
                 });
                 var flag = 0;
                 var timer2 = false;
@@ -421,8 +409,6 @@
                     };
                 };
 
-
-
                 //グリッド
                 function grid() {
 
@@ -482,8 +468,6 @@
                         var imgHight = box.eq(boxNoArray[i]).find(".wrap__box__inner__img").attr("height");
                         boxTeisu[i] = imgHight / imgWidth;
                     };
-
-
 
                     //判定
 
@@ -617,12 +601,7 @@
                     };
 
                 };
-
-
-
             });
-
         });
-
     };
 })(jQuery);
