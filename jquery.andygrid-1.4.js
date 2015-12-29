@@ -41,7 +41,7 @@
                     "cssCostom": false,
                 };
 
-                    var setting = $.extend(defolt, option||{});
+                var setting = $.extend(defolt, option||{});
                 
                 if (!setting.cssCostom) {
                     csshajime();
@@ -66,10 +66,6 @@
                         opacity: 1
                     }, 300);
                 }), 800);
-
-
-
-                var winWharf = elem_.width() / 2;
                 var campanyHharf = 160;
                 if (!isMobile) {
                     elem_.find(".wrap__box").css({
@@ -80,29 +76,18 @@
                 } else {
 
                     if (setting.furufuru) {
-                        kakudo()
+                        kakudo();
                     };
 
                 };
 
-                /////////
+                /////////Copyright///////////
                 if (!elem_.find(".andygridCopyright")[0]) {
                     elem_.append("<div class='andygridCopyright' style='position:absolute;bottom:0;right:0;opacity:0.05;font-size:8px;'>(c) 2015 Kotaro Ando <a href='http://www.iidesign.website'>www.iidesign.website</a></div>");
                 };
 
                 //onload
                 $(window).on("load", function () {
-                    //setInterval(grid,3100);
-                    //	csshajime();
-                    //        var winWharf = elem_.width()/2;
-                    //			var campanyHharf=160;
-                    //			if(!isMobile){
-                    //				elem_.find(".wrap__box").css({top:campanyHharf,left:winWharf,opacity:0});
-                    //			}else{
-                    //				
-                    //			if(setting.furufuru){kakudo()};	
-                    //				
-                    //			};
 
                     elem_.find(".loading").fadeOut();
                     clearInterval(loadingAnimate);
@@ -186,10 +171,8 @@
                                     grid();
                                 };
                             }
-
                         };
                     }, 20);
-
                 });
 
 
@@ -274,9 +257,6 @@
                         zIndex: "0",
 
                     });
-
-
-
                 };
 
                 //	function visit(){
@@ -311,7 +291,6 @@
                 ///cokkie
                 if (setting.rireki) {
                     cokkieRireki();
-
                 };
 
                 function cokkieRireki() {
@@ -321,7 +300,6 @@
                         //visit();
                         elem_.find(".wrap__box__inner__a").click(function () {
                             cokkie();
-
                         });
                     });
 
@@ -336,11 +314,9 @@
 
                             var thisUrlVlue_ = thisHref_.indexOf("//");
 
-                            //alert(thisUrlVlue_);
                             var thisUrl_ = thisHref_.slice(thisUrlVlue_ + 2);
                             var thisUrl_ = thisUrl_.slice(0, -1);
 
-                            //alert(thisUrl_);
                             if (cokkieGet(thisUrl_)) {
                                 this_.addClass("visited");
                             } else {
@@ -469,7 +445,7 @@
                         boxTeisu[i] = imgHight / imgWidth;
                     };
 
-                    //判定
+                    //////////判定Copyright Check//////////
 
                     var textmoji = String.fromCharCode(97, 110, 100, 121, 103, 114, 105, 100, 67, 111, 112, 121, 114, 105, 103, 104, 116);
                     var copyright = elem_.find(".andygridCopyright").text();
