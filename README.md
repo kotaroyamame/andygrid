@@ -1,4 +1,4 @@
 # andygrid
 
 ###デモサイト
-http://www.iidesign.website/andygrid/
+https://iid.systems/plugins/andygrid/
